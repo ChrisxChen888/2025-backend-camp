@@ -21,8 +21,8 @@ class CreditPackageController {
       })
       res.status(200).json({
         status: 'success',
-        data: creditPackage,
-        total: creditPackage.length
+        total: creditPackage.length,
+        data: creditPackage
       })
     } catch (error) {
       logger.error(error)
